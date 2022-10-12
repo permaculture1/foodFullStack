@@ -1,19 +1,17 @@
 const express = require('express');
 const cors = require('cors')
 const {Client} = require('pg');
-const PORT = 3150;
-const connectionString = 'postgresql://postgres:docker@localhost:5432/fooddb';
+const config = require('./config') [process.env.NODE_ENV || 'dev']
+const PORT = config.port
 const client = new Client ({
-    connectionString:connectionString,
+    connectionString:config.connectionString
 });
+
 const app = express()
 app.use(express.json())
 client.connect()
 app.use(cors())
-
-let corsOptions = {
-    config:'/solofullstack/index.html'
-}
+app.use(express.static('public'))
 
 app.route('/api/food')
 .get((req,res) => {
