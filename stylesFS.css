@@ -1,0 +1,111 @@
+.flexboxContainer{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+.flexbox-item {
+    min-height:100px;
+    width:250px;
+    margin: 10px;
+    border:3px solid #333;
+    background-color: #dfdfdf;
+    font-size: large;
+}
+
+#headTop {
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    background-color: #2f80ed;
+    border: 50px;
+    border-color: white;
+    border-radius: 5%;
+    
+}
+#bodyBacker{
+    height: 100vh;
+    width:100%;
+    background-image: url(https://www.colliers.com/-/media/images/colliers/unitedstates/national/news/2021/klmulticulturalconsumers1536x1040.ashx?bid=683b32f65de64d81b1330cc1518333a3);
+    background-position: center;
+    background-size:cover ;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.buttonStyle{
+      appearance: none;
+      backface-visibility: hidden;
+      background-color: #2f80ed;
+      border-radius: 10px;
+      border-style: none;
+      box-shadow: none;
+      box-sizing: border-box;
+      cursor: pointer;
+      display: inline-block;
+      font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      height: 50px;
+      letter-spacing: normal;
+      line-height: 1.5;
+      outline: none;
+      overflow: hidden;
+      padding: 14px 30px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      transform: translate3d(0, 0, 0);
+      transition: all .3s;
+      touch-action: manipulation;
+      vertical-align: top;
+      white-space: nowrap;
+    }
+    .buttonStyle:hover {
+      background-color: #1366d6;
+      box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+      opacity: 1;
+      transform: translateY(0);
+      transition-duration: .35s;
+    }
+    .buttonStyle:hover:after {
+      opacity: .5;
+    }
+    .buttonStyle:active {
+      box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
+      transform: translateY(2px);
+      transition-duration: .35s;
+    }
+    .buttonStyle:active:after {
+      opacity: 1;
+    }
+    @media (min-width: 768px) {
+        .buttonStyle-65 {
+        padding: 14px 22px;
+        width: 176px;
+      }
+}
+
+#specificfoodFI{
+    color: white;
+}
+#foodgenreFI{
+    color: white;
+}
+#calorievalueFI{
+    color: white;
+}
+::placeholder { 
+    color: white;
+  }
+#addFoodButton{
+    color:white;
+}
+#getButton{
+    color:white;
+    align-items: center;
+}
