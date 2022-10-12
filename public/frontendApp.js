@@ -6,10 +6,9 @@ var foodgenreFI = document.getElementById("foodgenreFI")
 var calorievalueFI = document.getElementById("calorievalueFI")
   
 function pullinfo () {
- fetch('http://localhost:3150/api/food')
+ fetch('https://food-front-api.onrender.com/api/food') 
 .then (data => data.json())
 .then (data => {
-    //centralDiv.textContent = `Food:${data[0].specificfood}   Calories:${data[0].calorievalue} Genre/Reigon:${data[0].foodgenre} `
     for(let i = 0;i < data.length;i++){
         const curr = data[i]
         let foodCard = document.createElement('div')
@@ -40,14 +39,10 @@ pullinfo()
             }
 
 
-        fetch('http://localhost:3150/api/food', options)
+        fetch('https://food-front-api.onrender.com/api/food', options)
         .then(() => {
             flexboxContainer.innerHTML = ""
             pullinfo()
         })
    })
 
-
-    // getButton.addEventListener('click', () => {
-    //     console.log(" yonk ")
-    // })
