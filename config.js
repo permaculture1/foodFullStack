@@ -1,6 +1,6 @@
 module.exports = {
     dev: {
-        connectionString: 'postgresql://postgres:docker@localhost:5432/fooddb',
+        connectionString: 'postgreslink',
         port:'3150'
     },
     
